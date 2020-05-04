@@ -1,0 +1,21 @@
+.static-widget-container {
+  background-color: #f0f0f0;
+  padding: 45px 0;
+  overflow: hidden;
+
+  .title {
+      font-weight: 600;
+  }
+
+  .image-content {
+      padding: 3px;
+      border: 1px solid #000;
+      width: 210px;
+      height: 210px;
+      border-radius: 3px;
+    img {
+      height: 100%;
+      border-radius: 3px;
+    }
+  }
+}

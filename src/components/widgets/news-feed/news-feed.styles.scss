@@ -1,0 +1,44 @@
+.news-feed-container {
+  padding: 45px 0;
+
+  .title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .card-container {
+    width: 30rem;
+    display: flex;
+    border: none;
+
+    .title-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image-border {
+        padding: 3px;
+        border: 1px solid #000;
+        border-radius: 3px;
+
+        img {
+          height: 200px;
+          width: 300px;
+          border-radius: 3px;
+        }
+      }
+    }
+    .post-title {
+        margin: 12px 0;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+  }
+}

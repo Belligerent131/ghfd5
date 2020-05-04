@@ -1,0 +1,44 @@
+.employee-login-container {
+    background-color: #efefef;
+
+    .row {
+        padding: 55px 0;
+    }
+
+    .form-wrapper {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border: 1px solid rgba(0,0,0,0.5);
+        border-radius: 5px;
+
+        input:focus {
+            box-shadow: none;
+            border: 1px solid maroon;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 10px;
+
+            .forgot-password {
+                display: inline-flex;
+                vertical-align: bottom;
+
+                a {
+                    text-decoration: none;
+                    color: rgba(180, 0, 0, 0.5);
+                    font-weight: 600;
+                }
+            }
+
+            button {
+                padding: 2px 20px;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

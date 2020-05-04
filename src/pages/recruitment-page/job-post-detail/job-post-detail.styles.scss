@@ -1,0 +1,112 @@
+.job-detail-container {
+  padding: 20px 0;
+
+  .job-snapshot-container {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+
+    .tags-container {
+      .tag {
+        margin-right: 20px;
+        font-size: 18px;
+        color: #777;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+        svg {
+          margin-bottom: 5px;
+          margin-right: 5px;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .action-row {
+      margin-top: 20px;
+      .apply-btn {
+        font-size: 20px;
+        font-weight: 600;
+        svg {
+          margin-right: 10px;
+          margin-bottom: 3px;
+        }
+      }
+      .share-text {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-bottom: -15px;
+        position: absolute;
+        bottom: 25px;
+      }
+      .share-icon-container {
+        display: inline-flex;
+        justify-content: flex-start;
+        width: auto;
+        margin-left: 15px;
+        position: absolute;
+        bottom: 12px;
+        left: 415px;
+
+        svg {
+          margin-right: 20px;
+          font-size: 22px;
+
+          &.facebook {
+            fill: #3b5998;
+          }
+          &.google {
+            fill: #de5246;
+          }
+          &.twitter {
+            fill: #1da1f2;
+          }
+          &.linkedin {
+            fill: #0072b1;
+          }
+          &.pinterest {
+            fill: #c8232c;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .job-detail-body-container {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .job-short-info-container {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    flex: 0 0 24% !important;
+    height: 165px;
+    padding: 25px 35px;
+
+    .short-detail-title {
+      font-weight: 600;
+    }
+
+    .short-detail-text {
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      font-weight: 400;
+      font-family: 'Ubuntu', sans-serif;
+      margin-top: 10px;
+      color: #777;
+
+      svg {
+        font-size: 22px;
+        margin-bottom: 3px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

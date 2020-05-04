@@ -1,0 +1,26 @@
+.dashboard-roster-container {
+  padding: 0 !important;
+
+  .header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: left;
+    margin: 0;
+    text-align: center;
+    padding: 15px 0 10px 0;
+
+    & * {
+        padding: 0;
+    }
+  }
+
+  .rosterUser {
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px 0 10px 0;
+
+    & * {
+        padding: 0;
+    }
+  }
+}
