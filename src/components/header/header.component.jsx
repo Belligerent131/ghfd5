@@ -27,11 +27,17 @@ const HeaderComponent = (props) => (
         <Dropdown as={NavItem}>
           <Dropdown.Toggle as={NavLink}>About</Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item as={Link} to="/">About the District</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/">Mission Statement</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/">Vision</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/">The Chief</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/">Elected officials</Dropdown.Item>
+            <Dropdown.Item as={Link} to="/about">
+              About the District
+            </Dropdown.Item>
+            {/*<Dropdown.Item as={Link} to="/">Mission Statement</Dropdown.Item>
+<Dropdown.Item as={Link} to="/">Vision</Dropdown.Item>*/}
+            <Dropdown.Item as={Link} to="/chief">
+              The Chief
+            </Dropdown.Item>
+            <Dropdown.Item as={Link} to="/">
+              Elected Officials
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown as={NavItem}>
@@ -41,9 +47,9 @@ const HeaderComponent = (props) => (
           </Dropdown.Menu>
         </Dropdown>
         <Nav.Item>
-        <Nav.Link as={Link} to="/recruitment">
-          Recruitment
-        </Nav.Link>
+          <Nav.Link as={Link} to="/recruitment">
+            Recruitment
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="#">Contact</Nav.Link>
