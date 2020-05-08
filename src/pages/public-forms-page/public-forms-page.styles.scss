@@ -1,0 +1,30 @@
+.public-forms-container {
+  padding: 25px 0;
+  .card-deck {
+    margin-bottom: 20px;
+
+    .card {
+      .download {
+        margin-right: 15px;
+
+        svg {
+          margin-bottom: 5px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+        &.pdf svg {
+          fill: red;
+        }
+        &.doc svg {
+          fill: blue;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

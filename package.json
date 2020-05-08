@@ -13,15 +13,23 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "bcrypt-nodejs": "^0.0.3",
     "bootstrap": "^4.4.1",
-    "firebase": "^7.14.2",
-    "firebase-admin": "^8.11.0",
-    "firebase-tools": "^8.2.0",
+    "express-generator": "^4.16.1",
     "fullcalendar": "^3.10.1",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.25.3",
+    "mongoose": "^5.9.12",
+    "morgan": "^1.10.0",
     "node-sass": "^4.14.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-google-recaptcha": "^2.0.1",
     "react-icons": "^3.10.0",
     "react-is": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -32,7 +40,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +49,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:8080/",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -54,5 +64,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }

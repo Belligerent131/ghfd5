@@ -1,10 +1,16 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button, Modal, Form } from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
 import "./roster.styles.scss";
 
 const RosterDashboard = (props) => {
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
   return (
+    <>
     <Container fluid className="dashboard-roster-container">
       <Row className="header">
         <Col lg={2} className="labelName">
@@ -21,6 +27,11 @@ const RosterDashboard = (props) => {
         </Col>
         <Col lg={2} className="labelActive">
           Status
+          <div className="btn-addUser-container">
+            <Button onClick={handleShow} variant="success">
+              Add User
+            </Button>
+          </div>
         </Col>
       </Row>
       <Row className="rosterUser">
@@ -41,6 +52,39 @@ const RosterDashboard = (props) => {
         </Col>
       </Row>
     </Container>
+
+    <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Create User</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+          <Form.Group>
+          <Form.Label>First Name</Form.Label>
+          <Form.Control required />
+          </Form.Group>
+            
+          <Form.Group>
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control required />
+          </Form.Group>
+
+          <Form.Group>
+          <Form.Label>Password</Form.Label>
+          <Form.Control required type="password" />
+          </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      </>
   );
 };
 

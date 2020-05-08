@@ -23,4 +23,19 @@
         padding: 0;
     }
   }
+
+  .btn-addUser-container {
+    position: absolute;
+    display: inline-flex;
+    right: 0;
+    top: 0;
+    width: auto;
+
+    button {
+      padding: 3px 6px;
+      position: relative;
+      right: 0;
+      font-size: 12px;
+    }
+  }
 }

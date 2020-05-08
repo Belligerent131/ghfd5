@@ -1,0 +1,31 @@
+.contact-page-container {
+    padding: 52px 0;
+
+    h3 {
+        text-align: center;
+    }
+
+    form {
+        input, textarea {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #000;
+            background: none;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 25px;
+
+            &:focus {
+                border: none;
+                border-bottom: 1px solid #000;
+                background: none;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .send-btn {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
